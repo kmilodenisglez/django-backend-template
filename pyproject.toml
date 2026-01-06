@@ -1,0 +1,76 @@
+[project]
+name = "django-backend"
+version = "0.2.0"
+description = "django backend template"
+authors = [
+    { name = "kmilo", email = "kmilo.denis.glez@yandex.com" }
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "django (>=6.0.0)",
+    "django-settings-env (>=5.6.0,<6.0.0)",
+    "django-allauth[socialaccount] (>=65.13.0,<66.0.0)",
+    "pillow (>=12.0.0,<13.0.0)",
+    "django-imagekit (>=6.0.0,<7.0.0)",
+    "django-tree-queries[admin] (>=0.22.0,<0.23.0)",
+    "django-guardian (>=3.2.0,<4.0.0)",
+    "bleach (>=6.0.0,<7.0.0)",
+    "djangorestframework (>=3.16.1,<4.0.0)",
+    "django-widget-tweaks (>=1.5.0,<2.0.0)",
+    "stripe (>=14.0.1,<15.0.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.2.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.4.2"
+pytest-django = "^4.5"
+
+[tool.poetry.group.lint.dependencies]
+ruff = "^0.14.0"         # ✅ Ruff for linting & formatting
+
+[tool.poetry.group.dev]
+include-groups = [
+    "test",
+    "lint",
+]
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.0"     # ✅ Pre-commit for Git hooks
+
+[tool.poetry.group.production.dependencies]
+gunicorn = "^20.1"
+
+# ---------------- Ruff configuration ----------------
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+fix = true
+exclude = ["migrations", ".venv", "__pycache__"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Enable import sorting
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
+
+# ---------------- Pre-commit configuration hint ----------------
+# Create a .pre-commit-config.yaml file in your project root with:
+# ---------------------------------------------------------------
+# repos:
+#   - repo: https://github.com/astral-sh/ruff-pre-commit
+#     rev: v0.7.0
+#     hooks:
+#       - id: ruff
+#         args: [--fix]
+#       - id: ruff-format
+# ---------------------------------------------------------------

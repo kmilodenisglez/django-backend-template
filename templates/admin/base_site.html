@@ -1,0 +1,77 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block nav-global %}
+{{ block.super }}
+
+{# Mueve el selector dentro de user-tools #}
+<div id="user-tools">
+    {{ block.super }}
+
+    <div id="lang-switcher">
+        <form action="{% url 'set_language' %}" method="post">
+            {% csrf_token %}
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            <select name="language" onchange="this.form.submit()">
+                {% for lang in LANGUAGES %}
+                <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
+                    🌐 {{ lang.1 }}
+                </option>
+                {% endfor %}
+            </select>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block extrahead %}
+{{ block.super }}
+<style>
+    /* Contenedor del selector dentro de user-tools */
+    #user-tools {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* espacio entre logout, view site y selector */
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    /* Selector de idioma */
+    #lang-switcher select {
+        background: rgba(255, 255, 255, 0.9);
+        color: #222;
+        border: 1px solid rgba(0,0,0,0.15);
+        border-radius: 6px;
+        font-size: 13px;
+        padding: 2px 6px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(4px);
+    }
+
+    #lang-switcher select:hover {
+        border-color: #777;
+    }
+
+    /* Dark mode automático */
+    @media (prefers-color-scheme: dark) {
+        #lang-switcher select {
+            background: rgba(34,34,34,0.85);
+            color: #f5f5f5;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        #lang-switcher select:hover {
+            border-color: #aaa;
+        }
+    }
+
+    /* Dark mode for custom class */
+    .dark-mode #lang-switcher select {
+        background: rgba(34,34,34,0.85);
+        color: #f5f5f5;
+        border: 1px solid rgba(255,255,255,0.2);
+    }
+</style>
+{% endblock %}

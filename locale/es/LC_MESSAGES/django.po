@@ -1,0 +1,1057 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-01 19:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
+"1 : 2;\n"
+
+#: :111
+msgid "Ad owner has been notified about the category change."
+msgstr "El propietario del anuncio ha sido notificado sobre el cambio de categoría."
+
+#: :127
+msgid "Ad owner has been notified about the deletion."
+msgstr "Se ha notificado al propietario del anuncio sobre la eliminación."
+
+#: :149
+#, python-format
+msgid "Sent moderation notifications to %(count)s owners."
+msgstr "Se enviaron notificaciones de moderación a %(count)s propietarios."
+
+#: :152
+msgid "Notify owner(s) about moderation action"
+msgstr "Notificar a los propietarios sobre la acción de moderación"
+
+#: :195 :244
+#: :458 :514
+#: :567 :649
+msgid "Home"
+msgstr "Inicio"
+
+#: :210
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: :212 :31
+#: :12
+msgid "Search"
+msgstr "Buscar"
+
+#: :214
+msgid "Has images"
+msgstr "Imágenes"
+
+#: :216 :72
+msgid "Posted today"
+msgstr "Publicado hoy"
+
+#: :472
+#: :15
+msgid "Delete Ad"
+msgstr "Eliminar anuncio"
+
+#: :515 :38
+#: :68
+msgid "Favorites"
+msgstr "Favoritos"
+
+#: :610
+msgid "Search saved successfully"
+msgstr "Búsqueda guardada exitosamente"
+
+#: :651 :45
+#: :70
+msgid "My Profile"
+msgstr "Mi perfil"
+
+#: :657 :39
+#: :69
+#: :5
+#: :28
+msgid "Saved Searches"
+msgstr "Búsquedas guardadas"
+
+#: apps/core/models.py:13
+msgid "Site Name"
+msgstr "Nombre del sitio"
+
+#: apps/core/models.py:14
+#, fuzzy
+#| msgid "Logout"
+msgid "Logo"
+msgstr "Cerrar sesión"
+
+#: apps/core/models.py:15
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact Email"
+msgstr "Contacto"
+
+#: apps/core/models.py:16
+msgid "Footer Text"
+msgstr "Texto de pie de página"
+
+#: apps/core/models.py:17
+msgid "Max Images Per Ad"
+msgstr "Máximo de imágenes por anuncio"
+
+#: apps/core/models.py:18
+msgid "Last Updated"
+msgstr "Actualizado"
+
+#: apps/core/models.py:21 apps/core/models.py:22 apps/core/models.py:35
+msgid "Site Configuration"
+msgstr "Configuración del sitio"
+
+#: apps/core/models.py:26
+msgid "Only one SiteConfiguration instance is allowed."
+msgstr "Sólo se permite una instancia de SiteConfiguration."
+
+#: apps/core/models.py:43 apps/core/models.py:72
+msgid "Role Name"
+msgstr "Nombre del rol"
+
+#: apps/core/models.py:44
+msgid "Max Images"
+msgstr "Imágenes máximas"
+
+#: apps/core/models.py:47
+msgid "Role Image Limit"
+msgstr "Límite de imagen de rol"
+
+#: apps/core/models.py:48
+msgid "Role Image Limits"
+msgstr "Límites de imagen de rol"
+
+#: apps/core/models.py:58
+msgid "Max images is required"
+msgstr "Se requiere el máximo de imágenes"
+
+#: apps/core/models.py:62
+msgid "Max images must be between 1 and 60."
+msgstr "El máximo de imágenes debe estar entre 1 y 60."
+
+#: apps/core/models.py:73
+msgid "Title Limit"
+msgstr "Límite de título"
+
+#: apps/core/models.py:74
+msgid "Body Limit"
+msgstr "Límite corporal"
+
+#: apps/core/models.py:77
+msgid "Role Text Limit"
+msgstr "Límite de texto del rol"
+
+#: apps/core/models.py:78
+msgid "Role Text Limits"
+msgstr "Límites de texto de rol"
+
+#: apps/core/models.py:89
+msgid "Title limit is required"
+msgstr "Se requiere límite de título"
+
+#: apps/core/models.py:92
+msgid "Title limit must be between 1 and 1000 characters."
+msgstr "El límite del título debe estar entre 1 y 1000 caracteres."
+
+#: apps/core/models.py:96
+msgid "Body limit is required"
+msgstr "Se requiere límite corporal"
+
+#: apps/core/models.py:99
+msgid "Body limit must be between 10 and 20000 characters."
+msgstr "El límite del cuerpo debe estar entre 10 y 20000 caracteres."
+
+#: apps/subscriptions/models.py:16
+msgid "Stripe"
+msgstr "Stripe"
+
+#: apps/subscriptions/models.py:17
+msgid "Crypto (NowPayments)"
+msgstr "Criptomonedas (NowPayments)"
+
+#: apps/subscriptions/models.py:21
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#: apps/subscriptions/models.py:21
+msgid "e.g. Credit Card, Crypto"
+msgstr "p. ej. Tarjeta de crédito, Criptomoneda"
+
+#: apps/subscriptions/models.py:24
+msgid "Provider ID"
+msgstr "ID del proveedor"
+
+#: apps/subscriptions/models.py:26 apps/subscriptions/models.py:63
+#: apps/subscriptions/models.py:97 apps/subscriptions/models.py:118
+msgid "Active"
+msgstr "Activo"
+
+#: apps/subscriptions/models.py:28
+msgid "Configuration"
+msgstr "Configuración"
+
+#: apps/subscriptions/models.py:31
+msgid "Provider specific config (public keys, etc)"
+msgstr "Configuración específica del proveedor (claves públicas, etc.)"
+
+#: apps/subscriptions/models.py:35
+msgid "Payment Method"
+msgstr "Método de pago"
+
+#: apps/subscriptions/models.py:36
+msgid "Payment Methods"
+msgstr "Métodos de pago"
+
+#: apps/subscriptions/models.py:50
+msgid "Monthly"
+msgstr "Mensual"
+
+#: apps/subscriptions/models.py:51
+msgid "Annual"
+msgstr "Anual"
+
+#: apps/subscriptions/models.py:54 apps/subscriptions/models.py:88
+msgid "Name"
+msgstr "Nombre"
+
+#: apps/subscriptions/models.py:55
+msgid "Slug"
+msgstr "Slug"
+
+#: apps/subscriptions/models.py:56 :5
+msgid "Price"
+msgstr "Precio"
+
+#: apps/subscriptions/models.py:57
+msgid "Currency"
+msgstr "Divisa"
+
+#: apps/subscriptions/models.py:58 apps/subscriptions/models.py:90
+msgid "Duration (Months)"
+msgstr "Duración (Meses)"
+
+#: apps/subscriptions/models.py:60
+msgid "Stripe Price ID"
+msgstr "ID del precio de Stripe"
+
+#: apps/subscriptions/models.py:62
+msgid "Description"
+msgstr "Descripción"
+
+#: apps/subscriptions/models.py:68
+msgid "Plan"
+msgstr "Plan"
+
+#: apps/subscriptions/models.py:69
+msgid "Plans"
+msgstr "Planes"
+
+#: apps/subscriptions/models.py:92
+msgid "Minimum duration to apply this discount"
+msgstr "Duración mínima para aplicar este descuento"
+
+#: apps/subscriptions/models.py:95
+msgid "Percentage Off"
+msgstr "Porcentaje de descuento"
+
+#: apps/subscriptions/models.py:95
+msgid "Discount percentage (0-100)"
+msgstr "Porcentaje de descuento (0-100)"
+
+#: apps/subscriptions/models.py:100
+msgid "Discount"
+msgstr "Descuento"
+
+#: apps/subscriptions/models.py:101
+msgid "Discounts"
+msgstr "Descuentos"
+
+#: apps/subscriptions/models.py:119
+#, fuzzy
+#| msgid "Cancel"
+msgid "Canceled"
+msgstr "Cancelar"
+
+#: apps/subscriptions/models.py:120
+msgid "Past Due"
+msgstr "Vencido"
+
+#: apps/subscriptions/models.py:121
+msgid "Unpaid"
+msgstr "No pagado"
+
+#: apps/subscriptions/models.py:140
+msgid "Status"
+msgstr "Estado"
+
+#: apps/subscriptions/models.py:142
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#: apps/subscriptions/models.py:143
+msgid "End Date"
+msgstr "Fecha de finalización"
+
+#: apps/subscriptions/models.py:147
+msgid "External Subscription ID"
+msgstr "ID de suscripción externa"
+
+#: apps/subscriptions/models.py:151
+msgid "ID from the payment provider (e.g. sub_123 or payment_id)"
+msgstr "ID del proveedor de pagos (p. ej. sub_123 o payment_id)"
+
+#: apps/subscriptions/models.py:156
+msgid "Stripe Subscription ID"
+msgstr "ID de suscripción de Stripe"
+
+#: apps/subscriptions/models.py:159
+msgid "Stripe Customer ID"
+msgstr "ID de cliente de Stripe"
+
+#: apps/subscriptions/models.py:165
+msgid "Subscription"
+msgstr "Suscripción"
+
+#: apps/subscriptions/models.py:166
+msgid "Subscriptions"
+msgstr "Suscripciones"
+
+#: apps/subscriptions/views.py:125
+msgid "Please select a payment method."
+msgstr "Por favor, selecciona un método de pago."
+
+#: apps/subscriptions/views.py:133
+#, python-format
+msgid "Error creating checkout session: %s"
+msgstr "Error al crear la sesión de pago: %s"
+
+#: apps/subscriptions/views.py:141
+msgid "Subscription successful! Welcome aboard."
+msgstr "¡Suscripción exitosa! Bienvenido."
+
+#: apps/subscriptions/views.py:171 apps/subscriptions/views.py:301
+msgid ""
+"Payment provider is not configured. Please contact the site administrator."
+msgstr "El proveedor de pagos no está configurado. Por favor, contacta al administrador del sitio."
+
+#: apps/subscriptions/views.py:189
+msgid ""
+"No payment currencies are currently available from the payment provider."
+msgstr "Actualmente no hay monedas de pago disponibles por el proveedor."
+
+#: apps/subscriptions/views.py:210
+msgid "Payment provider not configured"
+msgstr "Proveedor de pagos no configurado"
+
+#: apps/subscriptions/views.py:221
+msgid "No currencies supported by provider"
+msgstr "El proveedor no admite monedas"
+
+#: apps/subscriptions/views.py:241
+msgid "Requested currency is not available"
+msgstr "La moneda solicitada no está disponible"
+
+#: apps/subscriptions/views.py:311
+msgid "No payment currencies are available right now."
+msgstr "No hay monedas de pago disponibles en este momento."
+
+#: apps/subscriptions/views.py:327
+msgid "Selected currency is not supported."
+msgstr "La moneda seleccionada no es compatible."
+
+#: apps/subscriptions/views.py:358
+msgid "Failed to create invoice."
+msgstr "Error al crear la factura."
+
+#: apps/subscriptions/views.py:362
+#, python-format
+msgid "Error creating invoice: %s"
+msgstr "Error al crear la factura: %s"
+
+#: config/settings.py:134
+msgid "Spanish"
+msgstr "Español"
+
+#: templates/account/login.html:10 :53
+#: :82
+msgid "Login"
+msgstr "Acceso"
+
+#: templates/account/login.html:52 templates/account/login.html:87
+msgid "Sign in"
+msgstr "Iniciar sesión"
+
+#: templates/account/login.html:56
+msgid "Continue with Google"
+msgstr "Continuar con Google"
+
+#: templates/account/login.html:59
+msgid "Continue with Facebook"
+msgstr "Continuar con Facebook"
+
+#: templates/account/login.html:62
+msgid "Continue with Instagram"
+msgstr "Continuar con Instagram"
+
+#: templates/account/login.html:67
+msgid "OR"
+msgstr "O"
+
+#: templates/account/login.html:91
+#, fuzzy
+#| msgid "Don't have an account? Sign up"
+msgid "Don't have an account?"
+msgstr "¿No tienes cuenta? Regístrese"
+
+#: templates/account/logout.html:8 templates/account/logout.html:24
+#: templates/account/logout.html:31
+#, fuzzy
+#| msgid "Sign up"
+msgid "Sign Out"
+msgstr "Regístrarse"
+
+#: templates/account/logout.html:25
+#, fuzzy
+#| msgid "Are you sure you want to delete the search:"
+msgid "Are you sure you want to sign out?"
+msgstr "¿Seguro de que desea eliminar \"<strong>%(object.title)s</strong>\"?"
+
+#: templates/account/signup.html:9 templates/account/signup.html:36
+#: :54
+msgid "Sign up"
+msgstr "Regístrarse"
+
+#: templates/account/signup.html:25
+msgid "Create account"
+msgstr "Crear cuenta"
+
+#: templates/account/signup.html:40
+msgid "Already have an account? Log in"
+msgstr "¿Ya tienes cuenta? Inicie sesión."
+
+#: :4
+msgid "Browse Categories"
+msgstr "Explorar categorías"
+
+#: :10
+msgid "Click thumbnail to view"
+msgstr "Haz clic en la miniatura para ver"
+
+#: :10
+msgid "Click image for fullscreen"
+msgstr "Haz clic en la imagen para pantalla completa"
+
+#: :12
+msgid "No images available"
+msgstr "No hay imágenes disponibles"
+
+#: :23
+#, fuzzy
+#| msgid "Apply Filters"
+msgid "Apply price filter"
+msgstr "Limpiar Filtros"
+
+#: :31
+msgid "Up to $80 / 35200$"
+msgstr "Hasta $80 / 35200$"
+
+#: :37
+msgid "$80 - $150 / 35200$ - 66000$"
+msgstr "$80 - $150 / 35200$ - 66000$"
+
+#: :43
+msgid "$150 - $200 / 66000$ - 88000$"
+msgstr "$150 - $200 / 66000$ - 88000$"
+
+#: :49
+msgid "$200 - $250 / 88000$ - 110000$"
+msgstr "$200 - $250 / 88000$ - 110000$"
+
+#: :55
+msgid "$250 & above / 110000$ & above"
+msgstr "$250 y más / 110000$ y más"
+
+#: :63
+msgid "Reset All"
+msgstr "Restablecer todo"
+
+#: :16
+#, python-format
+msgid "Are you sure you want to delete \"<strong>%(object.title)s</strong>\"?"
+msgstr ""
+"¿Está seguro de que desea eliminar \"<strong>%(object.title)s</strong>\"?"
+
+#: :17
+msgid "This action cannot be undone."
+msgstr "Esta acción no se puede deshacer."
+
+#: :22
+msgid "Yes, Delete"
+msgstr "Sí, eliminar"
+
+#: :23
+#: :48
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: :22
+msgid "Posted by"
+msgstr "Publicado por"
+
+#: :25
+msgid "Expires"
+msgstr "Caduca"
+
+#: :33
+msgid "Favorite"
+msgstr "Favorito"
+
+#: :44
+#: :140
+msgid "Contact for price"
+msgstr "Contactar para precio"
+
+#: :52
+msgid "Category"
+msgstr "Categoría"
+
+#: :55
+#: :54
+msgid "Contact"
+msgstr "Contacto"
+
+#: :62
+#: :15
+msgid "Edit"
+msgstr "Editar"
+
+#: :64
+#: :51
+msgid "Delete"
+msgstr "Eliminar"
+
+#: :15 :130
+msgid "Create"
+msgstr "Crear"
+
+#: :15 :130
+msgid "Ad"
+msgstr "Anuncio"
+
+#: :35 :47
+msgid "characters"
+msgstr "caracteres"
+
+#: :85
+msgid "Image File"
+msgstr "Archivo de imagen"
+
+#: :101
+msgid "Delete this image?"
+msgstr "¿Borrar esta imagen?"
+
+#: :130
+msgid "Update"
+msgstr "Actualizar"
+
+#: :28
+msgid "Classified Ads"
+msgstr "Anuncios clasificados"
+
+#: :57
+msgid "results"
+msgstr "resultados"
+
+#: :66
+msgid "Only show ads with images"
+msgstr "Mostrar solo anuncios con imágenes"
+
+#: :67
+msgid "Has image"
+msgstr "Tiene imagen"
+
+#: :71
+msgid "Only show ads posted today"
+msgstr "Mostrar solo anuncios publicados hoy"
+
+#: :77
+msgid "Sort:"
+msgstr "Ordenar por"
+
+#: :85
+#: :30
+msgid "Newest"
+msgstr "Lo más nuevo"
+
+#: :86
+#: :33
+msgid "Price: Low to High"
+msgstr "Precio: De menor a mayor"
+
+#: :87
+#: :32
+msgid "Price: High to Low"
+msgstr "Precio: De mayor a menor"
+
+#: :88
+msgid "Title A-Z"
+msgstr "Título: De la A a la Z"
+
+#: :97
+msgid "List view"
+msgstr "Vista de lista"
+
+#: :100
+msgid "Thumbnail view"
+msgstr "Vista en miniatura"
+
+#: :103
+msgid "Gallery view"
+msgstr "Vista de galería"
+
+#: :109
+msgid "Save this search"
+msgstr "Guardar esta búsqueda"
+
+#: :126
+#: :34
+msgid "No image"
+msgstr "Sin imagen"
+
+#: :156
+#: :66
+msgid "← Previous"
+msgstr "← Previo"
+
+#: :170
+#: :80
+msgid "Next →"
+msgstr "Próximo →"
+
+#: :179
+msgid "No ads found matching your search."
+msgstr "No se encontraron anuncios. Intente ajustar su búsqueda o los filtros."
+
+#: :407
+msgid "Name this search:"
+msgstr "Nombre de esta búsqueda:"
+
+#: :428
+msgid "Search saved as:"
+msgstr "Búsqueda guardada como:"
+
+#: :441
+msgid "Error saving search"
+msgstr "Error al guardar la búsqueda"
+
+#: :23
+msgid "All"
+msgstr "Todo"
+
+#: :26
+msgid "Classifieds"
+msgstr "Anuncios clasificados"
+
+#: :30
+msgid "Search..."
+msgstr "Buscar"
+
+#: :37
+msgid "Post ad"
+msgstr "Publicar anuncio"
+
+#: :46 :71
+msgid "My Subscription"
+msgstr "Mi suscripción"
+
+#: :47 :72
+#: :38
+#: :9
+msgid "Edit Profile"
+msgstr "Editar perfil"
+
+#: :49 :73
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: :63 :78
+msgid "Menu"
+msgstr "Menú"
+
+#: :67
+msgid "Post Ad"
+msgstr "Publicar anuncio"
+
+#: :83
+msgid "Sign Up"
+msgstr "Regístrarse"
+
+#: :94
+msgid "Filters"
+msgstr "Limpiar Filtros"
+
+#: :6
+msgid "Ad Created"
+msgstr "Anuncio creado"
+
+#: :9
+msgid "Your ad has been created!"
+msgstr "¡Su anuncio ha sido creado!"
+
+#: :10
+#, python-format
+msgid "Hello %(user.username)s,"
+msgstr "Hola %(user.username)s,"
+
+#: :11
+#, python-format
+msgid ""
+"Your ad \"<strong>%(ad.title)s</strong>\" has been successfully created and "
+"is now live on our platform."
+msgstr ""
+"Su anuncio \"<strong>%(ad.title)s</strong>\" se ha creado correctamente y ya "
+"está publicado en nuestra plataforma."
+
+#: :12
+#: :12
+msgid "View your ad"
+msgstr "Vea su anuncio"
+
+#: :13
+msgid "Thank you for using our classifieds platform!"
+msgstr "¡Gracias por utilizar nuestra plataforma de anuncios clasificados!"
+
+#: :6
+msgid "Ad Favorited"
+msgstr "Anuncio favorito"
+
+#: :9
+msgid "Your ad was favorited!"
+msgstr "¡Tu anuncio ha sido añadido a favoritos!"
+
+#: :10
+#, python-format
+msgid "Hello %(ad_owner.username)s,"
+msgstr "Hola %(ad_owner.username)s,"
+
+#: :11
+#, python-format
+msgid ""
+"Great news! Your ad \"<strong>%(ad.title)s</strong>\" was favorited by "
+"%(favorited_by.username)s."
+msgstr ""
+"¡Buenas noticias! Tu anuncio \"<strong>%(ad.title)s</strong>\" fue añadido a "
+"favoritos por %(favorited_by.username)s."
+
+#: :13
+msgid "Keep up the great work!"
+msgstr "¡Sigan con el excelente trabajo!"
+
+#: :4
+msgid "My Favorites"
+msgstr "Favoritos"
+
+#: :21
+msgid "My Favorite Ads"
+msgstr "Mis anuncios favoritos"
+
+#: :22
+msgid "Browse More Ads"
+msgstr "Explorar anuncios"
+
+#: :42
+msgid "Remove from favorites"
+msgstr "Eliminar de favoritos"
+
+#: :57
+msgid "By"
+msgstr "Por"
+
+#: :67
+msgid "You haven't favorited any ads yet."
+msgstr "Todavía no has marcado ningún anuncio como favorito."
+
+#: :68
+msgid "Start exploring and save your favorite listings!"
+msgstr "¡Empieza a explorar y guarda tus anuncios favoritos!"
+
+#: :69
+msgid "Browse Ads"
+msgstr "Explorar anuncios"
+
+#: :124
+msgid "Error removing favorite. Please try again."
+msgstr "Error al eliminar el favorito. Inténtalo de nuevo."
+
+#: :3
+msgid "Search & Sort"
+msgstr "Buscar"
+
+#: :13
+msgid "Search ads..."
+msgstr "Buscar"
+
+#: :18
+msgid "Min Price"
+msgstr "Precio mínimo"
+
+#: :22
+msgid "Max Price"
+msgstr "Precio máximo"
+
+#: :28
+msgid "Sort By"
+msgstr "Ordenar por"
+
+#: :31
+msgid "Oldest"
+msgstr "Más antiguo"
+
+#: :34
+msgid "Title: A-Z"
+msgstr "Título: De la A a la Z"
+
+#: :35
+msgid "Title: Z-A"
+msgstr "Título: De la Z a la A"
+
+#: :40
+msgid "Apply Filters"
+msgstr "Limpiar Filtros"
+
+#: :9
+msgid "Manage your saved searches"
+msgstr "Gestione sus búsquedas"
+
+#: :38
+msgid "Created:"
+msgstr "Creado"
+
+#: :40
+msgid "Updated:"
+msgstr "Actualizado"
+
+#: :44
+msgid "Query:"
+msgstr "Consulta:"
+
+#: :48
+msgid "View Results"
+msgstr "Ver resultados"
+
+#: :89
+msgid "You haven't saved any searches yet."
+msgstr "Todavía no has marcado ningún anuncio como favorito."
+
+#: :89
+msgid "Start searching"
+msgstr "Comience su búsqueda"
+
+#: :98
+msgid "Tips"
+msgstr "Consejos"
+
+#: :102
+msgid "Use the bookmark icon on search results to save your searches."
+msgstr ""
+"Usa el icono de marcador en los resultados de búsqueda para guardar sus "
+"búsquedas."
+
+#: :106
+msgid "Click 'View Results' to run the saved search again."
+msgstr ""
+"Haz clic en 'Ver resultados' para volver a ejecutar la búsqueda guardada."
+
+#: :110
+msgid "Delete searches you no longer need."
+msgstr "Elimina las búsquedas que no necesites."
+
+#: :114
+msgid "Saved searches never expire."
+msgstr "Las búsquedas guardadas nunca caducan"
+
+#: :150
+msgid "Are you sure you want to delete the search:"
+msgstr "¿Seguro de que desea eliminar \"<strong>%(object.title)s</strong>\"?"
+
+#: :164
+#: :169
+msgid "Error deleting search"
+msgstr "Error al eliminar la búsqueda"
+
+#: :26
+msgid "Location"
+msgstr "Ubicación"
+
+#: :29
+msgid "Phone"
+msgstr "Teléfono"
+
+#: :32
+msgid "Website"
+msgstr "Sitio web"
+
+#: :47
+msgid "Recent Ads"
+msgstr "Anuncios recientes"
+
+#: :68
+msgid "No ads posted yet."
+msgstr "Aún no se han publicado anuncios."
+
+#: :39
+msgid "Current Avatar"
+msgstr "Avatar actual"
+
+#: :47
+msgid "Save Changes"
+msgstr "Guardar cambios"
+
+#: templates/subscriptions/crypto_selection.html:10
+msgid "Pay with Crypto"
+msgstr "Pagar con criptomonedas"
+
+#: templates/subscriptions/crypto_selection.html:17
+msgid "You are subscribing to:"
+msgstr "Te estás suscribiendo a:"
+
+#: templates/subscriptions/crypto_selection.html:18
+msgid "Price:"
+msgstr "Precio mínimo"
+
+#: templates/subscriptions/crypto_selection.html:38
+msgid "Select Currency"
+msgstr "Seleccionar moneda"
+
+#: templates/subscriptions/crypto_selection.html:42
+msgid "Choose a currency..."
+msgstr "Elija una moneda..."
+
+#: templates/subscriptions/crypto_selection.html:47
+msgid "Select your preferred cryptocurrency"
+msgstr "Seleccione su criptomoneda preferida"
+
+#: templates/subscriptions/crypto_selection.html:53
+msgid "Auto-selected"
+msgstr "Seleccionado automáticamente"
+
+#: templates/subscriptions/crypto_selection.html:56
+msgid "No supported tokens available right now."
+msgstr "No hay tokens compatibles disponibles en este momento."
+
+#: templates/subscriptions/crypto_selection.html:63
+msgid "Estimated Amount:"
+msgstr "Cantidad estimada:"
+
+#: templates/subscriptions/crypto_selection.html:67
+msgid "Minimum:"
+msgstr "Mínimo:"
+
+#: templates/subscriptions/crypto_selection.html:74
+msgid "Pay Now"
+msgstr "Pagar ahora"
+
+#: templates/subscriptions/crypto_selection.html:79
+msgid "Secure cryptocurrency payment"
+msgstr "Pago seguro con criptomonedas"
+
+#: templates/subscriptions/crypto_selection.html:99
+msgid "Loading..."
+msgstr "Cargando..."
+
+#: templates/subscriptions/crypto_selection.html:107
+msgid "Error"
+msgstr "Error"
+
+#: templates/subscriptions/crypto_selection.html:117
+msgid "Error fetching estimate"
+msgstr "Error al obtener la estimación"
+
+#: templates/subscriptions/pricing.html:6
+msgid "Choose Your Plan"
+msgstr "Elige tu plan"
+
+#: templates/subscriptions/pricing.html:24
+msgid "Select Payment Method"
+msgstr "Seleccione el método de pago"
+
+#: templates/subscriptions/pricing.html:32
+#: templates/subscriptions/pricing.html:37
+msgid "Subscribe"
+msgstr "Suscribir"
+
+#: templates/subscriptions/pricing.html:46
+msgid "No plans available at the moment."
+msgstr "No hay planes disponibles en este momento."
+
+#~ msgid "Drag images here"
+#~ msgstr "Arrastre imágenes aquí"
+
+#~ msgid "or click to browse"
+#~ msgstr "o haga clic para navegar"
+
+#~ msgid "PNG, JPG, GIF up to 5MB each"
+#~ msgstr "PNG, JPG, GIF de hasta 5 MB cada una"
+
+#~ msgid "New Images"
+#~ msgstr "Nuevas imágenes"
+
+#~ msgid "Existing Images"
+#~ msgstr "Imágenes existentes"
+
+#~ msgid "Remove"
+#~ msgstr "Eliminar"
+
+#~ msgid "Delete image"
+#~ msgstr "Eliminar imagen"
+
+#, python-brace-format
+#~ msgid "Maximum {max} images allowed"
+#~ msgstr "Máximo de {max} imágenes permitidas"
+
+#, python-brace-format
+#~ msgid "{name} is not an image file"
+#~ msgstr "{name} no es un archivo de imagen"
+
+#, python-brace-format
+#~ msgid "{name} is too large (max 5MB)"
+#~ msgstr "{name} es demasiado grande (máximo 5 MB)"
+
+#~ msgid "To Delete"
+#~ msgstr "Para eliminar"
+
+#~ msgid "Existing"
+#~ msgstr "Existente"
+
+#~ msgid "Ads"
+#~ msgstr "Anuncios"
+
+#~ msgid "View All Ads"
+#~ msgstr "Ver todos los anuncios"
+
+#~ msgid "Page"
+#~ msgstr "Página"
+
+#~ msgid "of"
+#~ msgstr "de"
+
+#~ msgid "Hello, world. You're at the polls index."
+#~ msgstr "Hola, mundo. Estás en la página de inicio de encuestas."
+
+#~ msgid "English"
+#~ msgstr "Inglés"

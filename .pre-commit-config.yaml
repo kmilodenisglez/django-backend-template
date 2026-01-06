@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: "v0.14.0"  # match your project's ruff version if needed
+    hooks:
+      - id: ruff
+        args: ["--fix"]
+      - id: ruff-format
+
+# A few extra helpful hooks to keep history clean and avoid simple mistakes
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-yaml
+      - id: check-added-large-files
+
+# You can add more hooks (e.g., security checks) as needed.
