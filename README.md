@@ -1,3 +1,93 @@
+# Django Backend Template
+
+A batteries-included Django backend template focused on building maintainable REST APIs and subscription-based services. This repository provides a clean project layout, helpful management commands, i18n support, test scaffolding, and best-practice tooling to jumpstart new projects.
+
+## Features
+
+- Role-based access control (RBAC)
+- Subscription/payment integration scaffolding
+- Internationalization (`locale/` includes Spanish)
+- Pytest test setup and example tests
+- Poetry-managed dependencies and `pyproject.toml`
+- Pre-commit hooks and Ruff for linting/formatting
+
+## Quick start
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/kmilodenisglez/django-backend-template.git
+cd django-backend-template
+```
+
+2. Install dependencies (Poetry recommended):
+
+```bash
+poetry install
+```
+
+3. Copy the example env and edit as needed:
+
+```bash
+cp .env.example .env
+# edit .env and set DJANGO_SECRET_KEY and database/email settings
+```
+
+4. Apply migrations and create a superuser:
+
+```bash
+python manage.py migrate
+python manage.py createsuperuser
+```
+
+5. Run the development server:
+
+```bash
+python manage.py runserver
+```
+
+## Using this repository as a GitHub template
+
+- On GitHub, click the **Use this template** button (top-right) to create a new repository pre-populated with this code.
+- Or create a new repo locally from this template and push to your own remote:
+
+```bash
+# create a new repository on GitHub, then:
+git remote remove origin
+git remote add origin https://github.com/<your-user>/<your-repo>.git
+git push -u origin main
+```
+
+## Project structure (high level)
+
+```
+/apps/            # all Django apps live here
+config/           # Django settings & URL conf
+manage.py
+pyproject.toml
+locale/            # translation files
+docs/              # additional documentation and commands
+README.md
+```
+
+## Developer notes
+
+- Use `python manage.py startapp_in_apps <name>` to create apps inside `apps/`.
+- Tests: run `pytest` (project is configured for pytest-django).
+- Formatting: `ruff format .` and `ruff check .`.
+- Install git hooks: `pre-commit install`.
+
+## Contributing
+
+- Follow the contributing guidelines in `docs/CONTRIBUTING.md` and use the included Makefile targets for common tasks.
+
+## License
+
+This project is provided under the Apache 2.0 license — see `LICENSE`.
+
+## Contact
+
+- Author: kmilo
 # Isowo
 
 [![CI](https://github.com/owo-nla/isowo/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/owo-nla/isowo/actions/workflows/ci.yml?branch=main)
