@@ -6,6 +6,25 @@ repos:
         args: ["--fix"]
       - id: ruff-format
 
+  - repo: local
+    hooks:
+      - id: pytest
+        name: pytest
+        # Use wrapper script to find Poetry venv dynamically; keep hook fast by
+        # running only the core unit tests (adjust as needed).
+        # disable pytest-django plugin for the pre-commit quick-run to avoid
+        # importing the full Django settings during commit-time checks
+        # Use wrapper script to find Poetry venv dynamically; keep hook fast by
+        # allowing the test subset to be changed with PRE_COMMIT_TESTS environment
+        # variable. By default, set PRE_COMMIT_TESTS in your environment to
+        # `apps/core/tests` (or whatever subset you prefer).
+        # Run a quick subset of tests during commits to avoid importing full
+        # Django settings (prevents ImportError: No module named 'config').
+        # Adjust this path as needed for your project.
+        entry: env PRE_COMMIT_TESTS="tests/smoke" bash scripts/run-tests.sh
+        language: system
+        pass_filenames: false
+
 # A few extra helpful hooks to keep history clean and avoid simple mistakes
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0

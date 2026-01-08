@@ -4,6 +4,8 @@ Thank you for contributing to Isowo! This short guide helps you set up a local d
 
 ## Developer setup
 
+For an expanded developer-focused guide (pre-commit hooks, test subset, scripts), see `CONTRIBUTING_DEV.md` in the project root.
+
 1. Install dependencies (Poetry recommended):
 
 ```bash
