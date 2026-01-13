@@ -41,7 +41,7 @@ fix:
 
 test:
 	@echo "Running tests..."
-	$(PYTEST) -q
+	@PYTHONPATH="$(PWD)" $(PYTEST) -q
 
 ci: lint test
 	@echo "CI checks passed (ruff check + tests)."
@@ -50,6 +50,7 @@ install-pre-commit:
 	@echo "Installing pre-commit hooks..."
 	$(PRE_COMMIT) install
 	@echo "pre-commit hooks installed. Run 'git add .' then commit to trigger hooks."
+	@echo "If you want pre-commit to run a fast subset of tests during commits, copy .env.example -> .env and set PRE_COMMIT_TESTS."
 
 bootstrap:
 	@echo "Bootstrapping development environment (poetry install if available)..."
@@ -63,3 +64,8 @@ bootstrap:
 precommit-all:
 	@echo "Running pre-commit hooks on all files..."
 	$(PRE_COMMIT) run --all-files
+
+precommit-fast:
+	@echo "Running pre-commit hooks using fast test subset from .env.example (or PRE_COMMIT_TESTS env var)"
+	# Run pre-commit using PRE_COMMIT_TESTS if set, otherwise use a sensible default.
+	@bash -lc 'PRE_COMMIT_TESTS="${PRE_COMMIT_TESTS:-apps/light_evote/tests}" PYTHONPATH="$(PWD)" $(PRE_COMMIT) run --all-files'
